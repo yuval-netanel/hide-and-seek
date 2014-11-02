@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-game = Game.create(name: "Where is Pachuli?!")
+game = Game.create(name: "Where")
 game.points.create(longtitude: 123.456, latitude: 456.789, question: "Where is the bonzzo?", order: 1)
 game.points.create(longtitude: 134.451, latitude: 596.789, question: "Where is the Goor?", order: 2)
 game.points.create(longtitude: 653.434, latitude: 836.789, question: "Where is the Chompi?", order: 3)

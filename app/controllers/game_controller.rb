@@ -1,4 +1,10 @@
 class GameController < ApplicationController
-  def show
+
+  def search
+    @game = Game.find_by(:name => params["name"])
+    if @game
+      render 'search'
+    end
   end
+
 end
