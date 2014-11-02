@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resource :game
    #get 'game/show'
 
-  get 'game/search', :to => 'games#search'
+  get 'games/search', :to => 'games#search'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
