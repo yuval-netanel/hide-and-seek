@@ -5,7 +5,6 @@ class GamesController < ApplicationController
   end
 
   def create
-    binding.pry
     game = Game.create(game_params)
     redirect_to game
   end
