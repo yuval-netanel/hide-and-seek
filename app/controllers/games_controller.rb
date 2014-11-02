@@ -17,6 +17,8 @@ class GamesController < ApplicationController
     @game = Game.find_by(:name => params["name"])
     if @game
       render 'search'
+    else
+      render json: {}
     end
   end
 
