@@ -1,15 +1,15 @@
 <%= form_for @game do |g| %>
    <h1>Game name</h1>
    <%= g.text_field :name %>
-   <%= g.fields_for :points, @game.points do |p, index| %>
-       <h1><%= "Point #{1}" %></h1>
+   <%= g.fields_for :points, @game.points do |p| %>
+       <h1><%= "Point #{p.index + 1}" %></h1>
       <h3>Question</h3>
       <%= p.text_field :question %>
       <h3>Latitude</h3>
       <%= p.number_field :latitude %>
       <h3>longitude</h3>
       <%= p.number_field :longtitude %>
-      <%= p.hidden_field :order, value: index %>
+      <%= p.hidden_field :order, value: p.index %>
     <% end %>
 
     <br>
