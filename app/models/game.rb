@@ -1,5 +1,5 @@
 class Game < ActiveRecord::Base
 
-  has_many :points, :order => 'order'
+  has_many :points
 
 end
