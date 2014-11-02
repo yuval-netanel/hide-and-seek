@@ -1,4 +1,11 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+<<<<<<< HEAD
 @import "game";
+=======
+
+input.btn-primary {
+  margin-top: 20px;
+}
+>>>>>>> af64d0b16d237fd3aedf2f569c5cbe843be4481a
