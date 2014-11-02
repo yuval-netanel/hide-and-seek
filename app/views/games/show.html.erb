@@ -1,12 +1,14 @@
 <h1> Game <%= @game.name %></h1>
 <% @game.points.each_with_index do |p, i| %>
-  <h3> Point <%= i + 1 %></h3>
-  <label>Question</label>
-  <p><%= p.question %></p>
-  <label>Longtitude</label>
-  <p><%= p.longtitude%></p>
-  <label>Latitude</label>
-  <p><%= p.latitude %></p>
-  <label>Order</label>
-  <p><%= p.order %></p>
+  <div class="col-md-2">
+    <h3> Point <%= i + 1 %></h3>
+    <label>Question</label>
+    <p><%= p.question %></p>
+    <label>Longtitude</label>
+    <p><%= p.longtitude%></p>
+    <label>Latitude</label>
+    <p><%= p.latitude %></p>
+    <label>Order</label>
+    <p><%= p.order %></p>
+  </div>
 <% end %>
