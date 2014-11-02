@@ -1,3 +1,28 @@
 // Place all the styles related to the game controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//
+
+html {
+  min-width:100%;
+  min-height:100%
+
+}
+html:after {
+  content : "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("twitter_lov_na_blago.jpg");
+  width: 100%;
+  height: 100%;
+  opacity : 0.4;
+  z-index: -1;
+
+}
+
+input.btn-primary {
+  margin-top: 20px;
+
+}
