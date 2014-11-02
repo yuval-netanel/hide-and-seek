@@ -9,9 +9,9 @@
        <%= p.label :question %>
        <%= p.text_area :question , class: "form-control"%>
        <%= p.label :latitude %>
-       <%= p.number_field :latitude , class: "form-control"%>
+       <%= p.number_field :latitude, step: "any", class: "form-control"%>
        <%= p.label :longtitude %>
-       <%= p.number_field :longtitude , class: "form-control"%>
+       <%= p.number_field :longtitude, step: "any" , class: "form-control"%>
        <%= p.hidden_field :order, value: p.index %>
      </div>
    <% end %>
