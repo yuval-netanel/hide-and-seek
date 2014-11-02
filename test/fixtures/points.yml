@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  longtitude: 9.99
+  latitude: 9.99
+  question: MyString
+  order: 
+
+two:
+  longtitude: 9.99
+  latitude: 9.99
+  question: MyString
+  order: 
