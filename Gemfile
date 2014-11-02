@@ -41,7 +41,9 @@ gem 'spring',        group: :development
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 #gem "twitter-bootstrap-rails"
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.3.0'
+gem 'autoprefixer-rails'
+
 
 gem 'gmaps4rails'
 

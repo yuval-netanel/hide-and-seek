@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
 //= require turbolinks
 //= require underscore
+//= require bootstrap-sprockets
 //= require gmaps/google
 //= require_tree .
 //= require game
