@@ -1,4 +1,4 @@
-<%= form_for @game, url: game_path do |g| %>
+<%= form_for @game do |g| %>
    <h1>Game name</h1>
    <%= g.text_field :name %>
    <%= g.fields_for :points, @game.points do |p, index| %>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resource :game
+  resources :games
 
   get 'games/search', :to => 'games#search'
 
