@@ -1,19 +1,24 @@
 <%= form_for @game do |g| %>
-   <h1>Game name</h1>
-   <%= g.text_field :name %>
+   <%= g.label :name %>
+   <%= g.text_field :name, class: "form-control" %>
+   <br>
+   <br>
+   <br>
    <%= g.fields_for :points, @game.points do |p| %>
-       <h1><%= "Point #{p.index + 1}" %></h1>
-      <h3>Question</h3>
-      <%= p.text_field :question %>
-      <h3>Latitude</h3>
-      <%= p.number_field :latitude %>
-      <h3>longitude</h3>
-      <%= p.number_field :longtitude %>
-      <%= p.hidden_field :order, value: p.index %>
-    <% end %>
+     <div class="col-md-4">
+       <%= p.label :question %>
+       <%= p.text_area :question , class: "form-control"%>
+       <%= p.label :latitude %>
+       <%= p.number_field :latitude , class: "form-control"%>
+       <%= p.label :longtitude %>
+       <%= p.number_field :longtitude , class: "form-control"%>
+       <%= p.hidden_field :order, value: p.index %>
+     </div>
+   <% end %>
 
-    <br>
-   <%= g.submit %>
+   <div>
+     <%= g.submit "Create Game", class: "btn btn-primary pull-right" %>
+   </div>
 <% end %>
 
 <div style='width: 800px;'>
