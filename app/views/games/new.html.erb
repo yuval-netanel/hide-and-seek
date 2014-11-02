@@ -1,0 +1,20 @@
+<%= form_for @game, url: game_path do |g| %>
+   <h1>Game name</h1>
+   <%= g.text_field :name %>
+   <h1>Point</h1>
+   <%= g.fields_for :point do |p| %>
+      <h3>Question</h3>
+      <%= p.text_field :question %>
+      <h3>Latitude</h3>
+      <%= p.text_field :latitude %>
+      <h3>longitude</h3>
+      <%= p.text_field :longitude %>
+    <% end %>
+
+    <br>
+   <%= g.submit %>
+<% end %>
+
+<div style='width: 800px;'>
+  <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
